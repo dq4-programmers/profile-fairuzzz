@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sederhana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            max-width: 380px;
+            width: 100%;
+            border-radius: 24px;
+            padding: 32px 24px 28px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Avatar sederhana dari SVG */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #d9e6f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            border: 4px solid #ffffff;
+            outline: 2px solid #a3c4e0;
+        }
+
+        .avatar svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e2b3a;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 15px;
+            color: #4a6b8a;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #5a6b7c;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            padding: 0 8px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 26px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #4a6b8a;
+            transition: color 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: #1e88e5;
+            transform: scale(1.15);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1e88e5;
+            color: white;
+            text-decoration: none;
+            padding: 12px 34px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            box-shadow: 0 6px 14px rgba(30, 136, 229, 0.3);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            background: #1565c0;
+            box-shadow: 0 8px 18px rgba(30, 136, 229, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Gambar avatar sederhana (SVG) -->
+        <div class="avatar">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Kepala -->
+                <circle cx="50" cy="38" r="20" fill="#FDD9B5" />
+                <!-- Mata -->
+                <circle cx="42" cy="36" r="3" fill="#333" />
+                <circle cx="58" cy="36" r="3" fill="#333" />
+                <!-- Senyum -->
+                <path d="M42 46 Q50 54, 58 46" stroke="#333" stroke-width="3" stroke-linecap="round" fill="none" />
+                <!-- Badan -->
+                <path d="M25 85 Q30 60, 50 60 Q70 60, 75 85" fill="#6C9BD2" />
+                <!-- Kerah -->
+                <path d="M42 63 L50 72 L58 63" fill="#FFFFFF" />
+            </svg>
+        </div>
+
+        <h1 class="name">Andi Pratama</h1>
+        <p class="title">Web Developer & UI Designer</p>
+        <p class="bio">
+            Suka membuat website yang bersih, cepat, dan mudah digunakan.
+            Sedang mendalami front-end dan desain antarmuka.
+        </p>
+
+        <div class="social-links">
+            <a href="#" title="GitHub">🐙</a>
+            <a href="#" title="LinkedIn">🔗</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">🐦</a>
+        </div>
+
+        <a href="#" class="btn">Hubungi Saya</a>
+    </div>
+
+</body>
+</html>
